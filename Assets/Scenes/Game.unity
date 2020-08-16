@@ -213,6 +213,7 @@ MonoBehaviour:
   deathFX: {fileID: 1829042541909138, guid: 937f165f38431c14e809e96ef5d797d1, type: 2}
   parent: {fileID: 106910029}
   scorePerHit: 12
+  hits: 10
 --- !u!1 &73081704
 GameObject:
   m_ObjectHideFlags: 0
@@ -400,6 +401,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &409674618 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1958773921851316, guid: 4f35418852fcf0548add46d468346a77,
+    type: 2}
+  m_PrefabInternal: {fileID: 673401701}
 --- !u!1 &461095347
 GameObject:
   m_ObjectHideFlags: 0
@@ -559,6 +565,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 2101960639}
     m_Modifications:
+    - target: {fileID: 114675780351821284, guid: 4f35418852fcf0548add46d468346a77,
+        type: 2}
+      propertyPath: guns.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4998453576644360, guid: 4f35418852fcf0548add46d468346a77, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -591,6 +602,24 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1958773921851316, guid: 4f35418852fcf0548add46d468346a77, type: 2}
+      propertyPath: m_Name
+      value: Gun Left
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824309585096170, guid: 4f35418852fcf0548add46d468346a77, type: 2}
+      propertyPath: m_Name
+      value: Gun Right
+      objectReference: {fileID: 0}
+    - target: {fileID: 114675780351821284, guid: 4f35418852fcf0548add46d468346a77,
+        type: 2}
+      propertyPath: guns.Array.data[0]
+      value: 
+      objectReference: {fileID: 409674618}
+    - target: {fileID: 114675780351821284, guid: 4f35418852fcf0548add46d468346a77,
+        type: 2}
+      propertyPath: guns.Array.data[1]
+      value: 
+      objectReference: {fileID: 1108095079}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4f35418852fcf0548add46d468346a77, type: 2}
   m_IsPrefabParent: 0
@@ -655,6 +684,7 @@ MonoBehaviour:
   deathFX: {fileID: 1829042541909138, guid: 937f165f38431c14e809e96ef5d797d1, type: 2}
   parent: {fileID: 106910029}
   scorePerHit: 100
+  hits: 10
 --- !u!1 &741716493 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1238095480485456, guid: bf374732b0ea2c34daa340dc2de7f746,
@@ -674,6 +704,7 @@ MonoBehaviour:
   deathFX: {fileID: 1829042541909138, guid: 937f165f38431c14e809e96ef5d797d1, type: 2}
   parent: {fileID: 106910029}
   scorePerHit: 12
+  hits: 10
 --- !u!1001 &845314274
 Prefab:
   m_ObjectHideFlags: 0
@@ -747,6 +778,7 @@ MonoBehaviour:
   deathFX: {fileID: 1829042541909138, guid: 937f165f38431c14e809e96ef5d797d1, type: 2}
   parent: {fileID: 106910029}
   scorePerHit: 12
+  hits: 10
 --- !u!1 &910659970
 GameObject:
   m_ObjectHideFlags: 0
@@ -874,6 +906,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4526873612856432, guid: 9a8cb6e22ee4aa84a885a3eae0be582a,
     type: 2}
   m_PrefabInternal: {fileID: 980201897}
+--- !u!1 &1108095079 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1824309585096170, guid: 4f35418852fcf0548add46d468346a77,
+    type: 2}
+  m_PrefabInternal: {fileID: 673401701}
 --- !u!1 &1376459247
 GameObject:
   m_ObjectHideFlags: 0
@@ -1058,15 +1095,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4990607877152018, guid: 6d7afa73fcb1fce4cb4b65361a29bcbd, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 31.59
+      value: 31.86
       objectReference: {fileID: 0}
     - target: {fileID: 4990607877152018, guid: 6d7afa73fcb1fce4cb4b65361a29bcbd, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 24.41
+      value: 21.3
       objectReference: {fileID: 0}
     - target: {fileID: 4990607877152018, guid: 6d7afa73fcb1fce4cb4b65361a29bcbd, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 285.98
+      value: 287.12
       objectReference: {fileID: 0}
     - target: {fileID: 4990607877152018, guid: 6d7afa73fcb1fce4cb4b65361a29bcbd, type: 2}
       propertyPath: m_LocalRotation.x
